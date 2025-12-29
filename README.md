@@ -18,9 +18,53 @@
 
 | Resource | Link |
 |----------|------|
-| 🎮 **Game Build (Windows & macOS)** | [Download from OneDrive](https://cadtedu-my.sharepoint.com/:f:/g/personal/someth_phay_student_cadt_edu_kh/IgDjvu6px5liSIlpq9xknnsyAeS8cZU2rcg8fjRwjgS4fHQ?e=n9D94p) |
-| 🎬 **Demo Video** | [Watch Demo](https://cadtedu-my.sharepoint.com/:f:/g/personal/someth_phay_student_cadt_edu_kh/IgDjvu6px5liSIlpq9xknnsyAeS8cZU2rcg8fjRwjgS4fHQ?e=n9D94p) |
-| 📦 **Source Code** | This Repository |
+| 🎮 **Game Build (Windows)** | [BuiltGame/Window/](BuiltGame/Window/) |
+| 🍎 **Game Build (macOS)** | [BuiltGame/MacOS/](BuiltGame/MacOS/) |
+| 🎬 **Demo Video** | [DemoVideo/](DemoVideo/) |
+| ☁️ **OneDrive Mirror** | [Download from OneDrive](https://cadtedu-my.sharepoint.com/:f:/g/personal/someth_phay_student_cadt_edu_kh/IgDjvu6px5liSIlpq9xknnsyAeS8cZU2rcg8fjRwjgS4fHQ?e=n9D94p) |
+
+---
+
+## 🚀 Installation Guide
+
+### 🪟 Windows Installation
+
+1. **Download** the file from `BuiltGame/Window/Survivor-Surcerer - Window.zip`
+2. **Extract** the ZIP file to your preferred location
+3. **Open** the extracted folder
+4. **Run** `Survivalist Sorcerer.exe` to start the game
+5. **Enjoy!** 🎮
+
+> **Note:** If Windows SmartScreen appears, click "More info" → "Run anyway"
+
+---
+
+### 🍎 macOS Installation
+
+The macOS build is split into 3 parts due to file size limits. Follow these steps:
+
+1. **Download** all 3 files from `BuiltGame/MacOS/`:
+   - `Survivor-Surcerer-Mac.zip.partaa`
+   - `Survivor-Surcerer-Mac.zip.partab`
+   - `Survivor-Surcerer-Mac.zip.partac`
+
+2. **Combine** the files using Terminal:
+   ```bash
+   cd ~/Downloads  # or wherever you downloaded the files
+   cat Survivor-Surcerer-Mac.zip.part* > Survivor-Surcerer-Mac.zip
+   ```
+
+3. **Extract** the combined ZIP file
+
+4. **First Launch** - Right-click the app → "Open" → Click "Open" in the dialog
+   > macOS may block the app since it's not from the App Store
+
+5. **If still blocked**, run this in Terminal:
+   ```bash
+   sudo xattr -rd com.apple.quarantine "/path/to/Survivalist Sorcerer.app"
+   ```
+
+6. **Enjoy!** 🎮
 
 ---
 
@@ -92,12 +136,17 @@
 
 ### Project Structure
 ```
-Assets/
-├── Scripts/         # Game logic (Player, AI, UI, Systems)
-├── Scenes/          # Game scenes (Menu, Loading, Gameplay, Credits)
-├── Prefabs/         # Player, Enemies, Effects prefabs
-├── Audio/           # Music and sound effects
-└── [Asset Packs]/   # 3D models, textures, effects
+├── Assets/              # Unity game assets
+│   ├── Scripts/         # Game logic (Player, AI, UI, Systems)
+│   ├── Scenes/          # Game scenes (Menu, Loading, Gameplay, Credits)
+│   ├── Prefabs/         # Player, Enemies, Effects prefabs
+│   └── Audio/           # Music and sound effects
+├── BuiltGame/           # Compiled game executables
+│   ├── Window/          # Windows build (.zip)
+│   └── MacOS/           # macOS build (split .zip parts)
+├── DemoVideo/           # Gameplay demo video
+├── Packages/            # Unity package manifest
+└── ProjectSettings/     # Unity project settings
 ```
 
 ---
