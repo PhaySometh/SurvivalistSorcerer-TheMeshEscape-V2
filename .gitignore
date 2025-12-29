@@ -1,0 +1,79 @@
+# Unity generated folders
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Uu]ser[Ss]ettings/
+[Mm]emory[Cc]aptures/
+[Rr]ecordings/
+
+# Unity IDE generated files
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+
+# Unity meta files for debug files
+*.pidb.meta
+*.pdb.meta
+*.mdb.meta
+
+# Unity crash reports
+sysinfo.txt
+
+# Build outputs
+*.apk
+*.aab
+*.unitypackage
+*.app
+
+# Crashlytics
+crashlytics-build.properties
+
+# Packed Addressables
+[Aa]ddressables/
+ServerData/
+
+# IDE folders
+.vs/
+.idea/
+.vscode/
+.consulo/
+ExportedObj/
+
+# Gradle (Android builds)
+.gradle/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Plastic SCM
+.plastic/
+
+# Source files (don't need originals in repo)
+Assets/**/*.psd
+Assets/**/*.zip
+Assets/**/*.rar
+
+# Ignore config file if not needed
+ignore.conf
