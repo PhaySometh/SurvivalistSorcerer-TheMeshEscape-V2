@@ -12,6 +12,9 @@
 
 </div>
 
+> **📝 Note to Lecturers:**
+> This repository is a migrated version of our [original project repository](https://github.com/PhaySometh/SurvivalistSorcerer-TheMeshEscape.git). We moved to this new `-V2` repository to resolve critical GitHub LFS (Large File Storage) bandwidth/storage limits that prevented us from pushing further updates. All final code and assets are contained here.
+
 ---
 
 ## 📥 Downloads & Demo
